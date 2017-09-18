@@ -11,6 +11,7 @@ class Board extends Component {
         let boxes;
         
         if(this.props.boxes){
+            console.log(this.props.boxes)
             boxes = this.props.boxes.map( (box,i) => {
                 box.id = i;
                 return (
