@@ -14,7 +14,7 @@ class Board extends Component {
             boxes = this.props.boxes.map( (box,i) => {
                 box.id = i;
                 return (
-                    <Box onHandleClick={this.updateBox.bind(this)} ref-id={i} key={i} box={box} />
+                    <Box onHandleClick={this.updateBox.bind(this)} key={i} box={box} />
                 )
             })
         }
