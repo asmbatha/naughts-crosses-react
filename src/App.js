@@ -26,7 +26,7 @@ class App extends Component {
         }
        
         this.state.moves++;
-        board[i] = getSym();
+        board[i].value = getSym();
 
         this.setState({
             board: board,
